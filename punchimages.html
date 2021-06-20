@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fonts/fa/css/font-awesome.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.6em;
+        }
+        .container{
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* first section styling */
+        .firstsection{
+            height: 500px;
+            width: 100%;
+            background-image: url('images/punch images/1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+        .firstsection h1{
+            color: #fff;
+            font-size: 6rem;
+            text-align: center;
+            text-decoration: underline;
+        }
+        .firstsection p{
+            color: #fff;
+            word-spacing: 0.8rem;
+            font-size: 13px;
+            /* font-size: 2rem; */
+            text-align: center;
+        }
+        .firstsection .btn{
+            background-color: yellowgreen;
+            padding: 5px;
+            margin-left: 550px;
+            margin-top: 10px;
+            border: none;
+        }
+        .firstsection .main-p{
+            text-align: center;
+            font-size: 40px;
+        }
+        .firstsection .main-span{
+            color: yellow;
+            font-size: 40px;
+            padding: 10px;
+        }
+        /* stylling the slider section */
+        .slider-section h1{
+            text-align: center;
+            font-size: 3.5rem;
+            color: #3d3d3d;
+        }
+        .slider-section2{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* border: 1px solid black; */
+            margin-top: 10px;
+            grid-gap: 2px;
+        }
+        /* .slider-section img{
+            height: 200px;
+            width: auto; 
+        } */
+        .images1 img{
+            height: 200px;
+            width: auto;
+        }
+        
+        .images2{
+            height: 200px;
+            width: auto;
+        }
+        .slider-section .subslider{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            height: 100px;
+            /* width: 100%; */
+        }
+        .subslider .subslider1{
+            background-color: #fec303;
+            color: #f4f4f4;
+        }
+        .subslider .subslider2{
+            background-color: #aeaeae;
+            color: #f4f4f4;
+        }
+        .subslider .subslider2 .sub{
+            /* background-color: #; */
+            color: #252525;
+        }
+        .subslider p{
+            text-align: center;
+            padding-top: 5px;
+        }    
+        .subslider div{
+            border: 1px solid #252525;
+        }
+        /* stylling section1  */
+        .section1{
+            margin-top: 10px;
+        }
+        .section1 .main-section{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            /* border: 2px solid black; */
+            padding: 10px;
+            grid-gap: 15px;
+            
+        }
+        .section1 .main-section p{
+            text-align: justify;
+        }
+        .section1 .main-section h3{
+            padding: 5px 0 10px 0;
+        }
+        .section1 h1{
+            text-align: center;
+            font-size: 3.5rem;
+            color: #3d3d3d;
+        }
+        /* stylling section2 */
+        .section2{
+            background-image: url('images/punch images/5.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 500px;
+            margin: auto;
+        }
+        .subsection2{
+            width: 80%;
+            margin: auto;
+        }
+        .section2 h1{
+            font-size: 4rem;
+            color: #fff;
+            /* padding-left: 60px; */
+        }
+        .section2 p{
+            color: #ffffff;
+            /* padding-left: auto; */
+        }
+        .main-button{
+            margin-top: 10px;
+            padding: 5px;
+            width: 10%;
+            color: #ffffff;
+            background-color:#3d3d3d;
+        }
+        /* stylling section3 */
+        .section3{
+            /* border: 2px black solid; */
+            margin-top: 10px;
+            padding: 20px;
+        }
+        .section3 h1{
+            text-align: center;
+            font-size: 4rem;
+            color: #3d3d3d;
+        }
+        .section3 img{
+            height: 100px;
+            width: auto;
+            border: 1px solid black;
+            border-radius: 50px;
+        }
+        .section3 .section3-image{
+            margin-left: 550px;
+            width: 10%;
+            /* border-radius: 50px; */
+        }
+        .section3 p{
+            padding: 0 40px 0 40px;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        .section3 h4{
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        .yell{
+            color: yellowgreen;
+        }
+        /* stylling section4 */
+        .section4{
+            background-image: url('images/punch images/5.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 500px;
+        }
+        .main-section4{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            /* width: 80%; */
+            align-items: center;
+            align-content: space-around;
+        }
+        .section4 img{
+            height: 350px;
+            width: auto;
+        }
+        .section4 p{
+            text-align: center;
+            font-size: 4rem;
+            color: #f4f4f4;
+        }
+        .main-section4 div{
+            margin-left: 35px;
+        }
+        /* stylling section5 */
+        .section5{
+            width: 80%;
+            margin-left: auto;
+            /* border: 1px solid black; */
+        }
+        .section5 input[type="text"]{
+            width: 40%;
+            margin-left:30;
+            padding: 5px;
+        }
+        .section5 h1{
+            text-align: center;
+            font-size: 4rem;
+            color: #666666;
+        }
+        .section5 input[type="submit"]{
+            padding: 5px;
+            background-color: #fec303;
+            width: 10%;
+            border:  none;
+        }
+        /* i{
+            font-size: 2rem;
+            text-align: center;
+        } */
+        /* stylling the footer */
+        .footer{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin-top: 20px;
+            background-color: #0f1316;
+            color: #ffffff;
+            height: 300px;
+            align-items: center;
+            align-content: center;
+            padding: 15px;
+        }
+        .blue{
+            background-color: #5d82d1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="firstsection">
+            <h1>VIVAMUS</h1>
+            <P>lorem ipsum Dolor sit Amet</P>
+            <button class="btn">Read more</button>
+            <p class="main-p"><span class="main-span">.</span>.</p>
+        </div>
+        <div class="slider-section">
+            <h1>WELCOME</h1>
+            <div class="slider-section2">
+                <div  class="images1">
+                    <img src="images/punch images/2.jpg" alt="">
+                </div>
+                <div>
+                    
+                    <div class="subslider">
+                        <div class="subslider1">
+                            <p>OPENING <br>HOUR</br></p>
+                        </div>
+                        <div class="subslider2">
+                            <p>EVERY DAY</p>
+                            <p class="sub">7am-12am</p>
+                        </div>
+                        <div class="subslider2">
+                            <p>SUNDAY</p>
+                            <p class="sub">10am-1pm</p>
+                        </div>
+                        <div class="subslider2">
+                            <p>NIGHT TIME</p>
+                            <p class="sub">12am-9am</p>
+                        </div>    
+                    </div>
+                    
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere sequi suscipit excepturi obcaecati commodi consectetur quisquam quae, magnam architecto rerum qui. Eaque quam perferendis cum adipisci explicabo itaque ipsum obcaecati!</p>
+                </div>
+                <div>
+                    <img class="images2" src="images/punch images/3.jpg" alt="">
+                    <img class="images2" src="images/punch images/4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="section1">
+            <h1>OUR SERVICES</h1>
+            <div class="main-section">
+                <div>
+                    <i class="fa fa-address-book"></i>
+                    <h3>PRAESENT TEMPOUR PORUS</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt pariatur aperiam vero ullam in blanditiis est quo  .</p>
+                </div>
+                <div>
+                    <p><i class=" fa fa-thumbs-up" style="color: black"></i></p>
+                    <h3>PRAESENT TEMPOUR PORUS</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt pariatur aperiam vero ullam in blanditiis est quo </p>
+                </div>
+                <div>
+                    <i class="fa fa-gear"></i>
+                    <h3>PRAESENT TEMPOUR PORUS</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt pariatur aperiam vero ullam in blanditiis est quo </p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <h3>PRAESENT TEMPOUR PORUS</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt pariatur aperiam vero ullam in blanditiis est quo  </p>
+                </div>
+            </div>
+        </div>
+        <div class="section2">
+            <div class="subsection2">
+            <h1>FUSCE CONGUE NEQUE QUIS DUI POTTITOR</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolor aut cupiditate placeat velit maiores adipisci sunt sus</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolor aut cupiditate placeat velit maiores adipisci sunt sus</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <button class="main-button">read more</button>
+            </div>
+        </div>
+        <div class="section3">
+            <h1>TESTIMONIALS</h1>
+            <div class="section3-image">
+                <img src="images/punch images/14.jpg" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur , voluptates tempore alias laboriosam nobis, eos similique numquam eveniet omnis atque incidunt sapiente nisi excepturi veritatis!</p>
+            <h4>JOHN FRANK</h4>
+            <h4 class="yell">founder</h4>
+            <i class="fa fa-genderless"></i>
+            <i class="fa fa-genderless"></i>
+            <i class="fa fa-genderless"></i>
+        </div>
+        <div class="section4">
+            <p>OUR SPECIALS</p>
+            <div class="main-section4">
+                <div>
+                    <img src="images/punch images/7.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/punch images/8.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/punch images/9.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/punch images/10.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="section5">
+            <h1>NEWS LETTER</h1>
+            <input type="text" placeholder="NAME">
+            <input type="text" placeholder="EMAIL">
+            <input type="submit" value="submit">
+        </div>
+        <div class="footer">
+            <div>
+                <h1>PUNCH</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam quibusdam quam hic aspernatur? Aut eos temporibus rerum voluptatum suscipit quaerat exercitationem quisquam repellat enim odio veritatis, culpa illo, quos tempore.</p>
+            </div>
+            <div>
+                <h1>NAVIGATION</h1>
+                <div>
+                    <h1>>ABOUT US</p>
+                        <p>>GALLERY</p>
+                        <p>>ICONS</p>
+                        <p>>SHORT CODES</p>
+                        <p>>CONTACTS</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <i class="fa fa-facebook blue ">Like us on facebook</i>
+                </div>
+                <div>
+                    <i class="fa fa-twitter green">Follow us on twitter</i>
+                </div>
+                <div>
+                    <i class="fa fa-">Add us on goggle plus</i>
+                </div>
+                <div>
+                    <i class=" fa fa-dribble"> Follow us on dribble </i>
+                </div>
+                <div>
+                    <i class="fa fa-pinterest darkred"> Follow us on pinterest</i>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <i class="fa fa-map-maker">The company name lorem ipsum dolor, New York, Maris park</i>
+                </div>
+                <div>
+                    <i class="fa fa-phone">+2348133792666</i>
+                </div>
+                <div>
+                    <i class="fa fa-email"> michaelblossom8654@gmail.com</i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

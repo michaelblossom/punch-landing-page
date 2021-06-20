@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.6em;
+        }
+        .container{
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        /* stylling section1 */
+        .section1 h1{
+            text-align: center;
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        /* stylling navsection */
+        .navsection ul{
+            padding: 0;
+            margin: 0;
+        }
+        .navsection li{
+            display: inline-block;
+            padding-left: 80px;
+            /* margin-left: 10px; */
+            /* display: flex;
+            align-items: center;
+            justify-content: space-between; */
+        }
+        .navsection .cnt{
+            color:#f8e07d  ;
+        }
+        .section2 h1{
+            text-align: center;
+            font-size: 4rem;
+            /* font-weight: bold; */
+        }
+        /* stylling section3 */
+        /* section3 .section3imgage img{
+            height: 200px;
+            width: auto;
+        } */
+        /* .section3 .section3img img{
+            height: 250;
+            width: auto;
+        }  */
+        .section3 img{
+            height: 250px;
+            width: auto;
+        }
+        .section3{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            background-color: #f4f4f4;
+            
+        }
+        .section3 h1{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        /* stylling section4 */
+        .section4images img{
+            height: 300px;
+            width: auto;
+        }
+        .section4{
+            background-image: url('images/punch images/1.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .section4images{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+        .section4 h1{
+            text-align: center;
+            font-size: 4rem;
+            color: #f4f4f4;
+        }
+        /* stylling section5 */
+        .section5 img{
+            height: 350px;
+            width: auto;
+        }
+        .main-section5 h2{
+            text-align: center;
+            font-size: 4rem;
+        }
+        .section5{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .yel{
+            color:#f8e07d ;
+            padding-bottom: 10px;
+        }
+        .yel2{
+            padding-top: 15px;
+            /* font-weight: bold; */
+        }
+        small{
+            font-weight: bold;
+        }
+        .navsection .hme{
+            margin-left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section1">
+            <h1>PUNCH</h1>
+        </div>
+
+        <div class="navsection">
+            <ul>
+                <li class="hme">Home</li>
+                <li class="cnt">About</li>
+                <li>Gallery</li>
+                <li>Pages</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+
+        <div class="section2">
+            <h1>About</h1>
+        </div>
+
+        <div class="section3">
+            <div class="section3image">
+                <img src="images/punch images/3.jpg" alt="">
+            </div>
+            <div class="section3img">
+                <img src="images/punch images/2.jpg" alt="">
+            </div>
+            
+            <div>
+                <h1>A Brief History Of About Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nobis dignissimos velit eum aut officiis aliquam corrupti unde qui. Tempora laboriosam dignissimos libero nobis officiis vitae reiciendis. Possimus, nesciunt recusandae.</p>
+            </div>
+        </div>
+
+        <div class="section4">
+            <h1>OUR COACHES</h1>
+            <div class="section4images">
+                <div>
+                    <img src="images/punch images/6.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/punch images/8.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/punch images/9.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/punch images/6.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/punch images/10.jpg" alt="">
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="main-section5">
+            <h2>NEWS & EVENT</h2>
+            <div class="section5">
+                <div>
+                    <img src="images/punch images/2.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/punch images/4.jpg" alt="">
+                </div>
+                <div>
+                    <h1 class="yel">Lorem ipsum dolor sit amet.</h1>
+                    <small>24june june 000000-12345</small>
+                    <p class="yel2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quas? <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, tempora.</p>
+                </div>
+                <div>
+                    <h1 class="yel">Lorem ipsum dolor sit amet.</h1>
+                    <small>24june june 000000-12345</small>
+                    <p class="yel2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quas? <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, tempora.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
